@@ -14,6 +14,7 @@ import (
 
 	"go.uber.org/dig"
 
+	v1 "github.com/marcelofabianov/chronos/internal/handler/v1"
 	"github.com/marcelofabianov/chronos/internal/platform/config"
 	"github.com/marcelofabianov/chronos/internal/platform/web"
 )
@@ -42,6 +43,8 @@ func (a *App) Run() error {
 	router := web.NewRouter(a.config, a.logger)
 
 	router.Get("/", DefaultHandler)
+
+	router.Mount("/api/v1", v1.LoadRoutes())
 
 	server := &http.Server{
 		Addr:         fmt.Sprintf("%s:%d", a.config.Server.Host, a.config.Server.Port),
