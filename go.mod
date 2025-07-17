@@ -6,6 +6,7 @@ require (
 	github.com/go-chi/chi/v5 v5.2.2
 	github.com/go-chi/cors v1.2.2
 	github.com/go-chi/httprate v0.15.0
+	github.com/joho/godotenv v1.5.1
 	github.com/spf13/viper v1.20.1
 	go.uber.org/dig v1.19.0
 )

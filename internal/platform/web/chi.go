@@ -14,7 +14,7 @@ import (
 
 const MaxBodySize = 1048576 // 1MB
 
-func NewPlatformRouter(cfg *config.AppConfig, logger *slog.Logger) *chi.Mux {
+func NewRouter(cfg *config.AppConfig, logger *slog.Logger) *chi.Mux {
 	r := chi.NewMux()
 
 	r.Use(middleware.Recoverer)
