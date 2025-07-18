@@ -17,6 +17,11 @@ type NewUserInput struct {
 	Preferences json.RawMessage `json:"preferences,omitempty"`
 }
 
+type UserExistsInput struct {
+	Email *types.Email
+	Phone *types.Phone
+}
+
 type FromUserInput struct {
 	ID             types.UUID
 	Name           string
@@ -127,3 +132,5 @@ func PasswordHash(pass string, h hasher.Hasher) (types.HashedPassword, error) {
 }
 
 // @TODO: add validate
+
+// @TODO: add func update and input

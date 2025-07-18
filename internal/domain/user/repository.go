@@ -2,14 +2,11 @@ package user
 
 import (
 	"context"
-
-	"github.com/marcelofabianov/chronos/internal/platform/types"
 )
 
 // --- UserExistsRepository ---
 type UserExistsRepoInput struct {
-	Email types.Email
-	Phone types.Phone
+	UserExistsInput
 }
 
 type UserExistsRepository interface {
