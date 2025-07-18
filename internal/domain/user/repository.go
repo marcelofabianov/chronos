@@ -24,6 +24,8 @@ type CreateUserRepository interface {
 	CreateUser(ctx context.Context, input CreateUserRepoInput) error
 }
 
+// @TODO: add struct e interfaces para operacoes restantes de user
+
 // --- UserRepository ---
 type UserRepository interface {
 	UserExistsRepository

@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+// @TODO: Finalizar func de retornar users
+
 func GetUsersHandler(w http.ResponseWriter, r *http.Request) {
 	response := map[string]string{
 		"message": "users retrieved successfully",

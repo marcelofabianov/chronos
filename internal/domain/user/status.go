@@ -8,3 +8,5 @@ const (
 	UserLoginStatusBlocked  UserLoginStatus = "blocked"
 	UserLoginStatusPending  UserLoginStatus = "pending"
 )
+
+// @TODO: add func para tratamento do dados

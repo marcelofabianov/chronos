@@ -9,6 +9,8 @@ func LoadRoutes() *chi.Mux {
 
 	r.Route("/users", func(r chi.Router) {
 		r.Get("/", GetUsersHandler)
+
+		//...
 	})
 
 	return r

@@ -131,6 +131,10 @@ func PasswordHash(pass string, h hasher.Hasher) (types.HashedPassword, error) {
 	return ha, nil
 }
 
-// @TODO: add validate
+// @TODO: add func para validar dados do input antes de retornar a struct
 
-// @TODO: add func update and input
+// @TODO: add func para update com um input
+
+// @TODO: add func para verificar se um usuario é igual ao informado pelo input
+
+// @TODO: add func(s) para manipular dados de email, password, status, role, phone...
