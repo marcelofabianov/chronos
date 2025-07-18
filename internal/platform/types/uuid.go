@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/msg"
+	"github.com/marcelofabianov/chronos/internal/platform/msg"
 )
 
 type UUID uuid.UUID

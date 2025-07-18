@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/port/hasher"
+	"github.com/marcelofabianov/chronos/internal/platform/port/hasher"
 )
 
 type HashedPassword string

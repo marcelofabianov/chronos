@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/msg"
-	"github.com/marcelofabianov/redtogreen/internal/platform/types"
+	"github.com/marcelofabianov/chronos/internal/platform/msg"
+	"github.com/marcelofabianov/chronos/internal/platform/types"
 )
 
 func TestNullableUUID_IsValid(t *testing.T) {

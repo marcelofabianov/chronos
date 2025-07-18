@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/types"
+	"github.com/marcelofabianov/chronos/internal/platform/types"
 )
 
 func mustNewTestUUID(t *testing.T) types.UUID {

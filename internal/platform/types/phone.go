@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/msg"
+	"github.com/marcelofabianov/chronos/internal/platform/msg"
 )
 
 const (

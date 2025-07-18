@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/marcelofabianov/redtogreen/internal/platform/msg"
+	"github.com/marcelofabianov/chronos/internal/platform/msg"
 )
 
 const (
