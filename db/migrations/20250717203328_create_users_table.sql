@@ -7,7 +7,7 @@ CREATE TABLE users (
     phone VARCHAR(30) NOT NULL UNIQUE,
     hashed_password VARCHAR(254) NOT NULL,
     role VARCHAR(20) NOT NULL,
-    status VARCHAR(20) NOT NULL,
+    login_status VARCHAR(20) NOT NULL,
     preferences JSONB,
     version INTEGER NOT NULL DEFAULT 1,
     created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
