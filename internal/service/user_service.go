@@ -22,7 +22,7 @@ func (u *UserService) Create(ctx context.Context, input user.NewUserInput) (*use
 		return nil, err
 	}
 
-	// @TODO: validar se o usuario ja existe para impedir a criacao de um novo
+	// @TODO: validar se o usuario ja existe para impedir a criacao
 
 	rInput := user.CreateUserRepoInput{User: newUser}
 
@@ -34,8 +34,10 @@ func (u *UserService) Create(ctx context.Context, input user.NewUserInput) (*use
 	return newUser, nil
 }
 
-func (u *UserService) Exists(ctx context.Context, input user.UserExistsInput) (bool, error) {
+func (u *UserService) Exists(ctx context.Context, user user.User) (bool, error) {
 	//...
+
+	// @TODO: utilizar o user.Equals(input user.UserExistsInput)
 
 	return true, nil
 }
